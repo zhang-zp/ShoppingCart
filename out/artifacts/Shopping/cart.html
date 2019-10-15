@@ -1,0 +1,62 @@
+<HEAD>
+	<TITLE>我的购物车</TITLE>
+	<META http-equiv=Content-Type content="text/html; charset=gb2312">
+</HEAD>
+
+<BODY bgColor="#ffffff">
+	<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" height="50">
+		<tr>
+			<td width="30%">&nbsp;</td>
+			<td align="center"><font color="red" size="+1"><b>欢迎光临购物系统</b></font></td>
+			<td width="30%" align="right" valign="bottom">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="3" align="right"><a href="login.html">登录</a></td>
+		</tr>
+	</table>
+	<hr>
+	<H1 align="center">购物车 </H1>
+
+	<FORM name="cartForm" action="order.html" method="post">
+		<table cellspacing="0" cellpadding="0" width="74%" align="center" border="1">
+			<tr align="center">
+				<td width="7%">编号</td>
+				<td width="20%" height="30">商品名称</td>
+				<td width="12%" height="30">单价</td>
+				<td width="20%" height="30">数量</td>
+				<td width="15%" height="30">合计</td>
+				<td width="26%" height="30">修改</td>
+			</tr>
+			<tr align="center">
+				<td height="30">1</td>
+				<td height="30">pen</td>
+				<td height="30">5.0</td>
+				<td height="30"><input maxlength="10" size="4" value="2" name="2">
+				</td>
+				<td height="30">10.0</td>
+				<td height="30"><input type="text" name="num" size="6"/> 修改数量<button>删除</button></td>
+			</tr>
+
+			<tr align="center">
+				<td height="30">2</td>
+				<td height="30">rubber</td>
+				<td height="30">1.0</td>
+				<td height="30"><input maxlength="10" size="4" value="1" name="3"></td>
+				<td height="30">1.0</td>
+				<td height="30"><input type="text" name="num" size="6"/> 修改数量 删除</td>
+			</tr>
+			<tr>
+				<td colspan="5" height="30">您的购物车中所有商品总金额：11.0</td>
+			</tr>
+		</table>
+		<BR>
+		<BR>
+		<TABLE cellSpacing="0" cellPadding="0" width="450" align="center" border="0">
+			<TR align="center">
+				<TD width="26%"><INPUT onClick="clearCart()" type="submit" value="清空购物车" name="submit"></TD>
+				<TD width="12%"><INPUT type="submit" value="结账" name="submit"></TD>
+				<TD width="20%"><INPUT onClick="javascript:location.href='list.html'" type="button" value="继续购物"></TD>
+			</TR>
+		</TABLE>
+	</form>
+</BODY>

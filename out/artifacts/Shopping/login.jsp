@@ -1,0 +1,29 @@
+<%-- Created by IntelliJ IDEA. --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+    <TITLE>login</TITLE>
+    <META charset="utf-8">
+</HEAD>
+<BODY bgColor="#ffffff">
+<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" height="50" >
+    <tr>
+        <td width="30%">&nbsp;</td>
+        <td align="center"><font color="red" size="+1"><b>欢迎光临购物系统</b></font></td>
+        <td width="30%" align="right" valign="bottom">
+            <a href="register.jsp"><span style="text-decoration:none">还没有账号，马上注册</span></a></td>
+    </tr>
+</table>
+<hr>
+<h2 align="center">
+    用户登录
+    <form action="login.user" method="post">
+        <span style="color: red;font-size: 15px" >${error_msg}</span><br>
+        用户编号：<input type="text" name="u_id"><br>
+        密&nbsp;&nbsp;码：<input type="password" name="password"><br>
+        <input type="submit" value="登录">
+    </form>
+</h2>
+</BODY>
+</HTML>

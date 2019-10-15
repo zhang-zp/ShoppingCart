@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>这是个测试的注册成功界面没什么用</title>
+</head>
+<body>
+<div>你的ID为请牢记！</div>
+<div id="box"></div>
+</body>
+<script>
+    //5秒跳转页面
+    var b = document.getElementById("box");
+    //b.innerHTML = "5秒后跳转登录页面";
+    var time = 5;
+    //每隔一秒执行定时器
+    var timer = setInterval(function(){
+        if(time>0){
+            time--;
+            b.innerHTML=time+"秒后跳转登录页面";
+        }else{
+            //终止定时器
+            window.location.href="login.html";
+            timer.clearInterval();
+        }
+    },1000);
+</script>
+
+
+</html>

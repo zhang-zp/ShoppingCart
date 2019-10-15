@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Shopping">
+    <output-path>$PROJECT_DIR$/out/artifacts/Shopping</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ShoppingCart/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ShoppingCart" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="c3p0-0.9.1.2" />
+          <element id="library" level="project" name="commons-dbutils-1.4" />
+          <element id="library" level="project" name="ojdbc6" />
+          <element id="library" level="project" name="jstl" />
+          <element id="library" level="project" name="standard" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
